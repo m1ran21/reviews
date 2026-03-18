@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Porto Bello Hotel reviews page. Choose a platform and leave your feedback."
+    />
+    <title>Porto Bello Hotel | Reviews</title>
+    <link rel="icon" href="../assets/favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <article class="contact-shell">
+        <header class="hero reveal">
+          <nav class="lang-switch" aria-label="Language switcher">
+            <button class="lang-btn is-active" type="button" data-lang="en" aria-pressed="true">ENG</button>
+            <button class="lang-btn" type="button" data-lang="ru" aria-pressed="false">RU</button>
+            <button class="lang-btn" type="button" data-lang="uz" aria-pressed="false">UZB</button>
+          </nav>
+
+          <div class="brand-lockup" aria-label="Porto Bello Hotel brand lockup">
+            <div class="brand-part brand-symbol" data-tilt>
+              <img src="../Logo.png" alt="" aria-hidden="true" class="brand-image" data-brand-image />
+            </div>
+            <div class="brand-part brand-text" data-tilt>
+              <img
+                src="../The%20name%20of%20the%20hotel%20in%20logo.png"
+                alt="Porto Bello Hotel"
+                class="brand-image"
+                data-brand-image
+              />
+            </div>
+          </div>
+          <p id="brandFallback" class="brand-fallback" hidden>Porto Bello Hotel</p>
+          <h1 id="hotelName" class="sr-only">Porto Bello Hotel</h1>
+          <p id="heroSubtitle" class="hero-subtitle">Share your experience with us</p>
+          <p id="heroMeta" class="hero-meta">Your review helps future guests and supports our team</p>
+        </header>
+
+        <section id="hotelPhotoSection" class="photo-section reveal">
+          <img
+            src="../Original%20photo!.jpg"
+            alt="Porto Bello Hotel exterior"
+            class="hotel-photo"
+            loading="lazy"
+            onerror="document.getElementById('hotelPhotoSection').style.display='none';"
+          />
+        </section>
+
+        <section class="actions reveal" aria-labelledby="actionsTitle">
+          <h2 id="actionsTitle" class="section-title">Leave a Review</h2>
+          <div id="actionGrid" class="action-grid"></div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer reveal">
+      <p id="footerHotel" class="footer-title">Porto Bello Hotel</p>
+      <p id="footerThanks" class="footer-thanks">Thank you for your feedback</p>
+      <p id="footerCopyright" class="footer-copy">
+        &copy; <span id="year"></span> Porto Bello Hotel. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
